@@ -57,7 +57,10 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "lint": "vendor/bin/phpcs --standard=.phpcs.xml",
+        "lint:fix": "vendor/bin/phpcbf --standard=.phpcs.xml",
+        "phan": "vendor/bin/phan --config-file .phan/config.php"
     },
     "conflict": {
         "symfony/symfony": "*"
